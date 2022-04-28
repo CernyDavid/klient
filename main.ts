@@ -1,5 +1,5 @@
 radio.setGroup(80)
-let serialnumber = control.deviceSerialNumber()
+let sernumb = control.deviceSerialNumber()
 let cislo = -1
 input.onButtonPressed(Button.B, function on_button_pressed_b() {
     
@@ -13,5 +13,5 @@ input.onButtonPressed(Button.A, function on_button_pressed_a() {
 })
 input.onButtonPressed(Button.AB, function on_button_pressed_ab() {
     radio.sendValue("hlas", cislo)
-    radio.sendValue("serialnumber", serialnumber)
+    radio.sendValue("serialnumber", sernumb)
 })

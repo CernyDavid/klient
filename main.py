@@ -1,5 +1,5 @@
 radio.set_group(80)
-serialnumber = control.device_serial_number()
+sernumb = control.device_serial_number()
 cislo = -1
 def on_button_pressed_b():
     global cislo
@@ -13,5 +13,5 @@ def on_button_pressed_a():
 input.on_button_pressed(Button.A, on_button_pressed_a)
 def on_button_pressed_ab():
     radio.send_value("hlas", cislo)
-    radio.send_value("serialnumber", serialnumber)
+    radio.send_value("serialnumber", sernumb)
 input.on_button_pressed(Button.AB, on_button_pressed_ab)
